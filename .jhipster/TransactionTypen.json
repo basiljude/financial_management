@@ -1,0 +1,18 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "transactions",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171025042936",
+    "entityTableName": "transaction_typen",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "lenus"
+}

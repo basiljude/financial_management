@@ -1,0 +1,41 @@
+
+
+
+
+entity AddCredit{
+	
+    CreditTime LocalDate,
+    Amound Double,
+    Comment String
+    }
+
+entity CashDesk
+{
+
+Type String
+}
+
+entity TransactionTypen
+{
+Transactions String,
+}
+
+relationship OneToMany {
+	
+AddCredit{cashdesk} to CashDesk
+}
+ 
+ relationship OneToOne {
+	
+	AddCredit{TransactionTypen} to TransactionTypen
+}
+
+
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Employee, Job
+// Set an angular suffix
+angularSuffix * with mySuffix
+

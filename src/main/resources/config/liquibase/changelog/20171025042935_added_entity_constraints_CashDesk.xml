@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity CashDesk.
+    -->
+    <changeSet id="20171025042935-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="add_credit_id"
+                                 baseTableName="cash_desk"
+                                 constraintName="fk_cash_desk_add_credit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="add_credit"/>
+
+    </changeSet>
+</databaseChangeLog>

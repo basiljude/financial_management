@@ -1,0 +1,41 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "transactionTypen",
+            "otherEntityName": "transactionTypen",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "addCredit"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "cashdesk",
+            "otherEntityName": "cashDesk",
+            "otherEntityRelationshipName": "addCredit"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "creditTime",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "amound",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "comment",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171025042934",
+    "entityTableName": "add_credit",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "lenus"
+}
