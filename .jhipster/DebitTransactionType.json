@@ -1,0 +1,25 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "addDebit",
+            "otherEntityName": "addDebit",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "transactions",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171025063039",
+    "entityTableName": "debit_transaction_type",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "lenus"
+}

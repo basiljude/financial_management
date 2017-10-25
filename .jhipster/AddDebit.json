@@ -1,0 +1,41 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "debitCashDesk",
+            "otherEntityName": "debitCashDesk",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "addDebit"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "debitTransactionType",
+            "otherEntityName": "debitTransactionType",
+            "otherEntityRelationshipName": "addDebit"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "creditTime",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "amound",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "comment",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171025063037",
+    "entityTableName": "add_debit",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "lenus"
+}

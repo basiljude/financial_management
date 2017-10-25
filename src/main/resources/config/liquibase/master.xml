@@ -8,8 +8,13 @@
     <include file="config/liquibase/changelog/20171025042934_added_entity_AddCredit.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20171025042935_added_entity_CashDesk.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20171025042936_added_entity_TransactionTypen.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171025063037_added_entity_AddDebit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171025063038_added_entity_DebitCashDesk.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171025063039_added_entity_DebitTransactionType.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20171025042934_added_entity_constraints_AddCredit.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20171025042935_added_entity_constraints_CashDesk.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171025063037_added_entity_constraints_AddDebit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171025063039_added_entity_constraints_DebitTransactionType.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

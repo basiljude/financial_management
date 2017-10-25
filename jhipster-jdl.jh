@@ -31,6 +31,40 @@ AddCredit{cashdesk} to CashDesk
 }
 
 
+entity AddDebit{
+	
+    CreditTime LocalDate,
+    Amound Double,
+    Comment String
+    }
+    
+    
+entity DebitCashDesk
+{
+
+Type String
+}
+
+entity DebitTransactionType
+{
+Transactions String
+}
+
+relationship OneToOne {
+	
+	AddDebit{debitCashDesk} to DebitCashDesk
+}
+relationship OneToMany {
+	
+AddDebit{debitTransactionType} to DebitTransactionType
+
+}
+
+
+
+
+
+
 
 dto * with mapstruct
 
