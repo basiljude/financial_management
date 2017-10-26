@@ -6,7 +6,7 @@
     <!--
         Added the constraints for entity CashDesk.
     -->
-    <changeSet id="20171025042935-2" author="jhipster">
+    <changeSet id="20171026055736-2" author="jhipster">
         
         <addForeignKeyConstraint baseColumnNames="add_credit_id"
                                  baseTableName="cash_desk"

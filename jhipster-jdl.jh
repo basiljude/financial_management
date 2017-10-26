@@ -2,6 +2,63 @@
 
 
 
+
+entity  PatientPaiment
+{
+
+Date LocalDate,
+Amound Double,
+Description String
+}
+
+
+entity Invoice
+{
+InvoiceDate LocalDate,
+InvoiceNumber Integer,
+MinBalance Double,
+MaxBalance Double,
+InvoiceStatus String
+
+}
+
+entity Type
+{
+Type String
+
+}
+
+entity Encounder
+{
+OutSet LocalDate,
+End LocalDate,
+Department String,
+VistType  String
+
+}
+relationship OneToOne {
+	
+PatientPaiment{Encounder} to CashDesk
+}
+
+relationship OneToMany {
+	
+PatientPaiment{Encounder} to Encounder
+}
+
+relationship OneToMany {
+	
+PatientPaiment{type} to Type
+}
+
+relationship OneToMany {
+	
+PatientPaiment{invoice} to Invoice
+}
+
+
+
+
 entity AddCredit{
 	
     CreditTime LocalDate,

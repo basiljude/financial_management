@@ -26,18 +26,18 @@ import java.util.Collection;
 @EnableAutoConfiguration(exclude = {MetricFilterAutoConfiguration.class, MetricRepositoryAutoConfiguration.class})
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
 @EnableDiscoveryClient
-public class LenusApp {
+public class OpenclinicApp {
 
-    private static final Logger log = LoggerFactory.getLogger(LenusApp.class);
+    private static final Logger log = LoggerFactory.getLogger(OpenclinicApp.class);
 
     private final Environment env;
 
-    public LenusApp(Environment env) {
+    public OpenclinicApp(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes lenus.
+     * Initializes openclinic.
      * <p>
      * Spring profiles can be configured with a program arguments --spring.profiles.active=your-active-profile
      * <p>
@@ -63,7 +63,7 @@ public class LenusApp {
      * @throws UnknownHostException if the local host name could not be resolved into an address
      */
     public static void main(String[] args) throws UnknownHostException {
-        SpringApplication app = new SpringApplication(LenusApp.class);
+        SpringApplication app = new SpringApplication(OpenclinicApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         String protocol = "http";

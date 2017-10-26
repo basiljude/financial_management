@@ -1,6 +1,6 @@
 package com.byta.lenus.web.rest;
 
-import com.byta.lenus.LenusApp;
+import com.byta.lenus.OpenclinicApp;
 import com.byta.lenus.web.rest.vm.LoggerVM;
 import ch.qos.logback.classic.AsyncAppender;
 import ch.qos.logback.classic.LoggerContext;
@@ -27,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see LogsResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = LenusApp.class)
+@SpringBootTest(classes = OpenclinicApp.class)
 public class LogsResourceIntTest {
 
     private MockMvc restLogsMockMvc;

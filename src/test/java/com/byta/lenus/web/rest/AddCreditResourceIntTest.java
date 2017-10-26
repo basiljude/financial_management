@@ -1,6 +1,6 @@
 package com.byta.lenus.web.rest;
 
-import com.byta.lenus.LenusApp;
+import com.byta.lenus.OpenclinicApp;
 
 import com.byta.lenus.domain.AddCredit;
 import com.byta.lenus.repository.AddCreditRepository;
@@ -39,7 +39,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see AddCreditResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = LenusApp.class)
+@SpringBootTest(classes = OpenclinicApp.class)
 public class AddCreditResourceIntTest {
 
     private static final LocalDate DEFAULT_CREDIT_TIME = LocalDate.ofEpochDay(0L);

@@ -17,19 +17,19 @@ eureka:
     client:
         enabled: true
     instance:
-        appname: lenus
-        instanceId: lenus:${spring.application.instance-id:${random.value}}
+        appname: openclinic
+        instanceId: openclinic:${spring.application.instance-id:${random.value}}
 
 spring:
     application:
-        name: lenus
+        name: openclinic
     jackson:
         serialization.write_dates_as_timestamps: false
     cache:
         type: none
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:mem:lenus;DB_CLOSE_DELAY=-1
+        url: jdbc:h2:mem:openclinic;DB_CLOSE_DELAY=-1
         name:
         username:
         password:
@@ -95,7 +95,7 @@ jhipster:
     security:
         authentication:
             jwt:
-                secret: af1d38fd034729d6f0d195acdcdbb2ef1985b350
+                secret: 89f41fe6407109275769714310b757f081386d50
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration

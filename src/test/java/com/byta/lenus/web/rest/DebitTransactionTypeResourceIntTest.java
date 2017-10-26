@@ -1,6 +1,6 @@
 package com.byta.lenus.web.rest;
 
-import com.byta.lenus.LenusApp;
+import com.byta.lenus.OpenclinicApp;
 
 import com.byta.lenus.domain.DebitTransactionType;
 import com.byta.lenus.repository.DebitTransactionTypeRepository;
@@ -37,7 +37,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see DebitTransactionTypeResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = LenusApp.class)
+@SpringBootTest(classes = OpenclinicApp.class)
 public class DebitTransactionTypeResourceIntTest {
 
     private static final String DEFAULT_TRANSACTIONS = "AAAAAAAAAA";

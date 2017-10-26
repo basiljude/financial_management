@@ -1,7 +1,7 @@
 package com.byta.lenus.web.rest;
 
 import io.github.jhipster.config.JHipsterProperties;
-import com.byta.lenus.LenusApp;
+import com.byta.lenus.OpenclinicApp;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see ProfileInfoResource
  **/
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = LenusApp.class)
+@SpringBootTest(classes = OpenclinicApp.class)
 public class ProfileInfoResourceIntTest {
 
     @Mock

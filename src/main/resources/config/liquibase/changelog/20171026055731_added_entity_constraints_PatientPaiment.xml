@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity PatientPaiment.
+    -->
+    <changeSet id="20171026055731-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="encounder_id"
+                                 baseTableName="patient_paiment"
+                                 constraintName="fk_patient_paiment_encounder_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cash_desk"/>
+
+    </changeSet>
+</databaseChangeLog>

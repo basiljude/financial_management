@@ -1,4 +1,4 @@
-# lenus
+# openclinic
 This application was generated using JHipster 4.10.0, you can find documentation and help at [http://www.jhipster.tech/documentation-archive/v4.10.0](http://www.jhipster.tech/documentation-archive/v4.10.0).
 
 This is a "microservice" application intended to be part of a microservice architecture, please refer to the [Doing microservices with JHipster][] page of the documentation for more information.
@@ -31,7 +31,7 @@ will generate few files:
 
 ## Building for production
 
-To optimize the lenus application for production, run:
+To optimize the openclinic application for production, run:
 
     ./mvnw -Pprod clean package
 

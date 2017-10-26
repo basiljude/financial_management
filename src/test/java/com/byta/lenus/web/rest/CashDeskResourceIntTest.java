@@ -1,6 +1,6 @@
 package com.byta.lenus.web.rest;
 
-import com.byta.lenus.LenusApp;
+import com.byta.lenus.OpenclinicApp;
 
 import com.byta.lenus.domain.CashDesk;
 import com.byta.lenus.repository.CashDeskRepository;
@@ -37,7 +37,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see CashDeskResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = LenusApp.class)
+@SpringBootTest(classes = OpenclinicApp.class)
 public class CashDeskResourceIntTest {
 
     private static final String DEFAULT_TYPE = "AAAAAAAAAA";

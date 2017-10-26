@@ -15,14 +15,30 @@
     <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
 
     <!--
-        Added the entity DebitCashDesk.
+        Added the entity Encounder.
     -->
-    <changeSet id="20171025063038-1" author="jhipster">
-        <createTable tableName="debit_cash_desk">
+    <changeSet id="20171026055734-1" author="jhipster">
+        <createTable tableName="encounder">
             <column name="id" type="bigint" autoIncrement="${autoIncrement}">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="jhi_type" type="varchar(255)">
+            <column name="out_set" type="date">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="jhi_end" type="date">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="department" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="vist_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="patient_paiment_id" type="bigint">
                 <constraints nullable="true" />
             </column>
 

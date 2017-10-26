@@ -30,12 +30,12 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171025042934",
+    "changelogDate": "20171026055735",
     "entityTableName": "add_credit",
     "dto": "mapstruct",
     "pagination": "no",
     "service": "serviceImpl",
     "jpaMetamodelFiltering": false,
     "angularJSSuffix": "mySuffix",
-    "microserviceName": "lenus"
+    "microserviceName": "openclinic"
 }

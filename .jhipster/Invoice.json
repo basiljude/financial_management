@@ -1,0 +1,41 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "patientPaiment",
+            "otherEntityName": "patientPaiment",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "invoiceDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "invoiceNumber",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "minBalance",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "maxBalance",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "invoiceStatus",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171026055732",
+    "entityTableName": "invoice",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "openclinic"
+}

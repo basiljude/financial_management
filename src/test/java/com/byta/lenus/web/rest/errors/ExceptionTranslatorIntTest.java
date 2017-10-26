@@ -1,6 +1,6 @@
 package com.byta.lenus.web.rest.errors;
 
-import com.byta.lenus.LenusApp;
+import com.byta.lenus.OpenclinicApp;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see ExceptionTranslator
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = LenusApp.class)
+@SpringBootTest(classes = OpenclinicApp.class)
 public class ExceptionTranslatorIntTest {
 
     @Autowired

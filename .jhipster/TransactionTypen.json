@@ -7,12 +7,12 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171025042936",
+    "changelogDate": "20171026055737",
     "entityTableName": "transaction_typen",
     "dto": "mapstruct",
     "pagination": "no",
     "service": "serviceImpl",
     "jpaMetamodelFiltering": false,
     "angularJSSuffix": "mySuffix",
-    "microserviceName": "lenus"
+    "microserviceName": "openclinic"
 }

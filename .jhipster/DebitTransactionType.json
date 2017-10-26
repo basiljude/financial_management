@@ -14,12 +14,12 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171025063039",
+    "changelogDate": "20171026055740",
     "entityTableName": "debit_transaction_type",
     "dto": "mapstruct",
     "pagination": "no",
     "service": "serviceImpl",
     "jpaMetamodelFiltering": false,
     "angularJSSuffix": "mySuffix",
-    "microserviceName": "lenus"
+    "microserviceName": "openclinic"
 }

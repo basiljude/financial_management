@@ -4,15 +4,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
     <!--
-        Added the constraints for entity AddCredit.
+        Added the constraints for entity DebitTransactionType.
     -->
-    <changeSet id="20171025042934-2" author="jhipster">
+    <changeSet id="20171026055740-2" author="jhipster">
         
-        <addForeignKeyConstraint baseColumnNames="transaction_typen_id"
-                                 baseTableName="add_credit"
-                                 constraintName="fk_add_credit_transaction_typen_id"
+        <addForeignKeyConstraint baseColumnNames="add_debit_id"
+                                 baseTableName="debit_transaction_type"
+                                 constraintName="fk_debit_transaction_type_add_debit_id"
                                  referencedColumnNames="id"
-                                 referencedTableName="transaction_typen"/>
+                                 referencedTableName="add_debit"/>
 
     </changeSet>
 </databaseChangeLog>

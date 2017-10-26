@@ -1,0 +1,53 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "encounder",
+            "otherEntityName": "cashDesk",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "patientPaiment"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "encounder",
+            "otherEntityName": "encounder",
+            "otherEntityRelationshipName": "patientPaiment"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "type",
+            "otherEntityName": "type",
+            "otherEntityRelationshipName": "patientPaiment"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "invoice",
+            "otherEntityName": "invoice",
+            "otherEntityRelationshipName": "patientPaiment"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "amound",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171026055731",
+    "entityTableName": "patient_paiment",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "openclinic"
+}
